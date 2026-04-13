@@ -27,4 +27,16 @@
       else if (input.includes("affidavit")) {
         output = "Affidavit:\nA written statement sworn under oath.\n\nSteps:\n1. Write\n2. Print\n3. Notary sign";
       } 
-      else if (input.includes("legal
+      else if (input.includes("legal notice")) {
+        output = "Legal Notice:\n1. Draft notice\n2. Send via advocate\n3. Wait for response";
+      } 
+      else {
+        output = "Try: affidavit / legal notice / file case";
+      }
+
+      document.getElementById("output").innerText = output;
+    }
+  </script>
+
+</body>
+</html>
