@@ -16,7 +16,15 @@
 
   <h3 id="output"></h3>
 
-  <script src="script.js"></script>
+  <script>
+    function generate() {
+      let input = document.getElementById("input").value.toLowerCase();
+      let output = "";
 
-</body>
-</html>
+      if (input.includes("file case")) {
+        output = "Steps to file a case:\n1. Hire lawyer\n2. Prepare documents\n3. File in court\n4. Attend hearings";
+      } 
+      else if (input.includes("affidavit")) {
+        output = "Affidavit:\nA written statement sworn under oath.\n\nSteps:\n1. Write\n2. Print\n3. Notary sign";
+      } 
+      else if (input.includes("legal
